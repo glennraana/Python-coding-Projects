@@ -70,7 +70,7 @@ def save_password():
         window.quit()
 
 
-#---------------------------- UI SETUP ------------------------------- #
+#---------------------------- GUI SETUP ------------------------------- #
 window = tk.Tk()
 window.title("Password Generator")
 
