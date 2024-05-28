@@ -20,7 +20,7 @@ cursor.execute("CREATE TABLE IF NOT EXISTS passwords (website TEXT, username TEX
 def password_generator():
     # Define the alphabets and symbols to be used in the password
     alfabeth = lowercase_alphabets = list(string.ascii_lowercase)
-    # Define the numbers and symbols to be used in the password
+    # Define the numbers to be used in the password
     numbers = random.sample(range(1, 10), 9)
     # Define the symbols to be used in the password
     symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
@@ -71,6 +71,7 @@ def save_password():
 
 
 #---------------------------- GUI SETUP ------------------------------- #
+# Define the windo( Canvas)
 window = tk.Tk()
 window.title("Password Generator")
 
@@ -80,13 +81,13 @@ canvas.create_image(150, 100, image=logo_img)
 canvas.pack(padx=10, pady=10)
 
 
-# Create what we need for E-mail
+# Create what we need for E-mai/Username input
 epost_label = tk.Label(window, text=" Enter Username")
 epost_label.pack()
 epost_entry = tk.Entry(window, width=20, border=10)
 epost_entry.pack()
 
-#Create what we need for website
+#Create what we need for website input
 website_label = tk.Label(window, text="Enter Website", border=10)
 website_label.pack()
 website_entry = tk.Entry(window, width=20, border=10)
@@ -111,5 +112,5 @@ save_btn_generate.pack()
 
 
 
-
+# Let the script run
 window.mainloop()
