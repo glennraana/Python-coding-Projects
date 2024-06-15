@@ -12,7 +12,7 @@ def chuck_joke():
     url = "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random"
     headers = {
         "accept": "application/json",
-        "X-RapidAPI-Key": "1740af1731mshdf75533da6dc8d7p124df4jsn5bbdcccd2a09",
+        "X-RapidAPI-Key": "xxxxxxxxxxxxxxxxxxxxxxx",
         "X-RapidAPI-Host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers)
