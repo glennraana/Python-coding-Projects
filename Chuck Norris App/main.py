@@ -34,7 +34,7 @@ def translate_joke():
     }
     headers = {
         "content-type": "application/json",
-        "X-RapidAPI-Key": "1740af1731mshdf75533da6dc8d7p124df4jsn5bbdcccd2a09",
+        "X-RapidAPI-Key": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
         "X-RapidAPI-Host": "google-translator9.p.rapidapi.com"
     }
     response = requests.post(url, json=payload, headers=headers)
